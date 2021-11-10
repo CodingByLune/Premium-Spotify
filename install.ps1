@@ -3,14 +3,15 @@ $PSDefaultParameterValues['Stop-Process:ErrorAction'] = 'SilentlyContinue'
 
 write-host @'
 ***************** 
-@lune message:
-#Just Craking
+@mrpond message:
+#Thailand #ThaiProtest #ThailandProtest #freeYOUTH
+Please retweet these hashtag, help me stop dictator government!
 ***************** 
 '@
 
 write-host @'
 ***************** 
-Author: @Lune#3156
+Author: @Nuzair46
 ***************** 
 '@
 
@@ -133,8 +134,8 @@ Downloading Latest Spotify full setup, please wait...
   Stop-Process -Name SpotifyFullSetup >$null 2>&1
 }
 
-if (!(test-path $SpotifyDirectory/chrome_elf.dll.bak)){
-	move $SpotifyDirectory\chrome_elf.dll $SpotifyDirectory\chrome_elf.dll.bak >$null 2>&1
+if (!(test-path $SpotifyDirectory/chrome_elf_bak.dll)){
+	move $SpotifyDirectory\chrome_elf.dll $SpotifyDirectory\chrome_elf_bak.dll >$null 2>&1
 }
 
 Write-Host 'Patching Spotify...'
@@ -166,6 +167,62 @@ UI isn't changed.
 }
 #>
 
+$ch = Read-Host -Prompt "Optional - Remove ad placeholder and upgrade button. (Y/N) "
+if ($ch -eq 'y') {
+    $xpuiBundlePath = "$SpotifyApps\xpui.spa"
+    $xpuiUnpackedPath = "$SpotifyApps\xpui\xpui.js"
+    $fromZip = $false
+    
+    # Try to read xpui.js from xpui.spa for normal Spotify installations, or
+    # directly from Apps/xpui/xpui.js in case Spicetify is installed.
+    if (Test-Path $xpuiBundlePath) {
+        Add-Type -Assembly 'System.IO.Compression.FileSystem'
+        Copy-Item -Path $xpuiBundlePath -Destination "$xpuiBundlePath.bak"
+
+        $zip = [System.IO.Compression.ZipFile]::Open($xpuiBundlePath, 'update')
+        $entry = $zip.GetEntry('xpui.js')
+
+        # Extract xpui.js from zip to memory
+        $reader = New-Object System.IO.StreamReader($entry.Open())
+        $xpuiContents = $reader.ReadToEnd()
+        $reader.Close()
+
+        $fromZip = $true
+    } elseif (Test-Path $xpuiUnpackedPath) {
+        Copy-Item -Path $xpuiUnpackedPath -Destination "$xpuiUnpackedPath.bak"
+        $xpuiContents = Get-Content -Path $xpuiUnpackedPath -Raw
+
+        Write-Host 'Spicetify detected - You may need to reinstall BTS after running "spicetify apply".';
+    } else {
+        Write-Host 'Could not find xpui.js, please open an issue on the BlockTheSpot repository.'
+    }
+
+    if ($xpuiContents) {
+        # Replace ".ads.leaderboard.isEnabled" + separator - '}' or ')'
+        # With ".ads.leaderboard.isEnabled&&false" + separator
+        $xpuiContents = $xpuiContents -replace '(\.ads\.leaderboard\.isEnabled)(}|\))', '$1&&false$2'
+    
+        # Delete ".createElement(XX,{onClick:X,className:XX.X.UpgradeButton}),X()"
+        $xpuiContents = $xpuiContents -replace '\.createElement\([^.,{]+,{onClick:[^.,]+,className:[^.]+\.[^.]+\.UpgradeButton}\),[^.(]+\(\)', ''
+    
+        if ($fromZip) {
+            # Rewrite it to the zip
+            $writer = New-Object System.IO.StreamWriter($entry.Open())
+            $writer.BaseStream.SetLength(0)
+            $writer.Write($xpuiContents)
+            $writer.Close()
+
+            $zip.Dispose()
+        } else {
+            Set-Content -Path $xpuiUnpackedPath -Value $xpuiContents
+        }
+    }
+} else {
+     Write-Host @'
+Won't remove ad placeholder and upgrade button.
+'@`n
+}
+
 $tempDirectory = $PWD
 Pop-Location
 
@@ -177,8 +234,9 @@ Write-Host 'Done.'
 
 write-host @'
 ***************** 
-@lune message:
-#Just Craking
+@mrpond message:
+#Thailand #ThaiProtest #ThailandProtest #freeYOUTH
+Please retweet these hashtag, help me stop dictator government!
 ***************** 
 '@
 
