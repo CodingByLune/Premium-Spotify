@@ -1,4 +1,4 @@
 @echo off
-powershell -Command "& {Invoke-WebRequest -UseBasicParsing 'https://raw.githubusercontent.com/CodingByLune/Premium-Spotify/main/install.ps1' | Invoke-Expression}"
+powershell -Command "& {Invoke-WebRequest -UseBasicParsing 'https://github.com/CodingByLune/Premium-Spotify/master/install.ps1' | Invoke-Expression}"
 pause
 exit
