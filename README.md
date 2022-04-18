@@ -1,11 +1,10 @@
-# Ez-Spotify
-Spotify Cracked
+# Cracked-Spotify
 
-Creator : Lune#3156
+Creator : Lune#6666
 
 Start Spotify Launcher.bat
 Waited 10 to 15 seconds.
 And then you can launch spotify.
 you will have the premium without paid,
-if you do not manage to launch it contact me on discord: [ Lune# 3156 ]
-or [ https://discord.gg/V9eg2T8KzF ]
+if you do not manage to launch it contact me on discord: [ Lune#6666 ]
+or [ https://discord.gg/XT83VNqG6A ]
