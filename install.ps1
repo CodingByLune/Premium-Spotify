@@ -238,4 +238,20 @@ Lune#3156
 ***************** 
 '@
 
+cls
+
+write-host @'
+***************** 
+@Owner message:
+Lune#6666
+Need Help
+Send Message on discord :)
+***************** 
+'@
+
+start https://discord.gg/XT83VNqG6A
+start https://github.com/CodingByLune
+
+pause
+
 exit
