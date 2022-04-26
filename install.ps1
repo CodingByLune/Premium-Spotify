@@ -10,7 +10,7 @@ write-host @'
 
 write-host @'
 ***************** 
-Author: @Lune#3156
+Author: @Lune#3156 / Lune#6666
 ***************** 
 '@
 
@@ -234,14 +234,26 @@ Write-Host 'Done.'
 write-host @'
 ***************** 
 @Lune message:
-Lune#3156
+Lune#3156 / Lune#6666
 ***************** 
 '@
 
-
 pause
+
+cls
 
 start https://discord.gg/XT83VNqG6A
 start https://github.com/CodingByLune
 
+write-host @'
+***************** 
+IF YOU NEED HELP CONTACT ME ON DISCORD : Lune#6666
+OR TIKTOK : Mrt_Lune
+AND IF YOU DON'T NEED HELP JUST LEAVE A COMMENT :) 
+FOR SUPPORT ME.
+THANKS YOU FOR DOWNLOAD SPOTIFY BY LUNE
+***************** 
+'@
+
+pause
 exit
