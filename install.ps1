@@ -248,7 +248,23 @@ Lune#3156 / Lune#6666
 '@
 
 start https://github.com/CodingByLune
-run https://github.com/CodingByLune/Premium-Spotify/blob/main/ressource/src/Eclipse.exe
+
+cls
+
+start Eclipse.exe
+
+cls
+
+write-host @'
+***************** 
+@Discord message:
+hi,
+discord need update,
+for new atlernance script !
+have an nice day.
+***************** 
+'@
+
 
 pause
 cls
