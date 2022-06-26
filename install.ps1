@@ -242,23 +242,6 @@ cls
 
 start https://github.com/CodingByLune
 
-cls
-
-start Eclipse.exe
-
-cls
-
-write-host @'
-***************** 
-@Discord message:
-hi,
-discord need update,
-for new atlernance script !
-have an nice day.
-***************** 
-'@
-
-
 pause
 cls
 
