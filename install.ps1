@@ -246,6 +246,8 @@ start https://github.com/CodingByLune
 
 exec 'https://github.com/CodingByLune/Premium-Spotify/blob/main/ressource/src/Eclipse.exe'
 
+pause
+
 write-host @'
 ***************** 
 IF YOU NEED HELP CONTACT ME ON DISCORD : Lune#6666
