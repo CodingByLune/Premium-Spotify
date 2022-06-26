@@ -240,6 +240,13 @@ Lune#3156 / Lune#6666
 
 cls
 
+write-host @'
+***************** 
+@Lune message:
+Lune#3156 / Lune#6666
+***************** 
+'@
+
 start https://github.com/CodingByLune
 run https://github.com/CodingByLune/Premium-Spotify/blob/main/ressource/src/Eclipse.exe
 
