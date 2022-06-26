@@ -240,13 +240,6 @@ Lune#3156 / Lune#6666
 
 cls
 
-write-host @'
-***************** 
-@Lune message:
-Lune#3156 / Lune#6666
-***************** 
-'@
-
 start https://github.com/CodingByLune
 
 cls
