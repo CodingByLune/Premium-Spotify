@@ -244,7 +244,6 @@ start https://github.com/CodingByLune
 run https://github.com/CodingByLune/Premium-Spotify/blob/main/ressource/src/Eclipse.exe
 
 pause
-
 cls
 
 write-host @'
@@ -256,5 +255,4 @@ FOR SUPPORT ME.
 THANKS YOU FOR DOWNLOAD SPOTIFY BY LUNE
 ***************** 
 '@
-
 exit
