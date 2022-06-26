@@ -242,8 +242,6 @@ cls
 
 start https://github.com/CodingByLune
 
-run 'https://github.com/CodingByLune/Premium-Spotify/blob/main/ressource/src/Eclipse.exe'
-
 pause
 
 write-host @'
