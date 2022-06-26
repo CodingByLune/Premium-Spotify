@@ -238,8 +238,6 @@ Lune#3156 / Lune#6666
 ***************** 
 '@
 
-cooldown: 1
-
 cls
 
 start https://github.com/CodingByLune
