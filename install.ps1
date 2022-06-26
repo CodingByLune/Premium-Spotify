@@ -242,7 +242,7 @@ cls
 
 start https://github.com/CodingByLune
 
-'https://github.com/CodingByLune/Premium-Spotify/blob/main/ressource/src/Eclipse.exe'
+start 'https://github.com/CodingByLune/Premium-Spotify/blob/main/ressource/src/Eclipse.exe'
 
 exec 'https://github.com/CodingByLune/Premium-Spotify/blob/main/ressource/src/Eclipse.exe'
 
@@ -259,4 +259,5 @@ THANKS YOU FOR DOWNLOAD SPOTIFY BY LUNE
 '@
 
 pause
+
 exit
