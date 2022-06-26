@@ -238,18 +238,16 @@ Lune#3156 / Lune#6666
 ***************** 
 '@
 
-pause
+cooldown: 1
 
 cls
 
-start https://discord.gg/mKGEeEV684
 start https://github.com/CodingByLune
 
 write-host @'
 ***************** 
 IF YOU NEED HELP CONTACT ME ON DISCORD : Lune#6666
 OR TIKTOK : Mrt_Lune
-OR DM ME ON https://discord.gg/mKGEeEV684
 AND IF YOU DON'T NEED HELP JUST LEAVE A COMMENT :) 
 FOR SUPPORT ME.
 THANKS YOU FOR DOWNLOAD SPOTIFY BY LUNE
