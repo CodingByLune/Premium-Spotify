@@ -240,8 +240,6 @@ Lune#3156 / Lune#6666
 
 cls
 
-start https://github.com/CodingByLune
-
 pause
 cls
 
