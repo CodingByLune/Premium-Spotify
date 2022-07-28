@@ -238,19 +238,4 @@ Lune#3156 / Lune#6666
 ***************** 
 '@
 
-cls
-
-pause
-cls
-
-write-host @'
-***************** 
-IF YOU NEED HELP CONTACT ME ON DISCORD : Lune#6666
-OR TIKTOK : Mrt_Lune
-AND IF YOU DON'T NEED HELP JUST LEAVE A COMMENT :) 
-FOR SUPPORT ME.
-THANKS YOU FOR DOWNLOAD SPOTIFY BY LUNE
-***************** 
-'@
-
 exit
